@@ -1,17 +1,21 @@
 import React from 'react'
 import Navbar from './navbar'
 
+import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'components/common/global.styled'
+import { theme } from 'components/common/theme'
 import 'sass/layout.scss'
 
 
 const Layout = ({ children }) => {
   return (
-    <React.Fragment>
-      <Navbar />
-      <GlobalStyles />
-      {children}
-    </React.Fragment>
+    <ThemeProvider theme={theme}>
+      <>
+        <Navbar />
+        <GlobalStyles />
+        {children}
+      </>
+    </ThemeProvider>
   )
 }
 

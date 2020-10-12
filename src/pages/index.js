@@ -6,7 +6,7 @@ import { FaBeer } from 'react-icons/fa'
 import Layout from "components/layout/layout"
 import SEO from "components/seo/seo"
 
-// import Container from 'react-bootstrap/Container'
+import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
@@ -14,8 +14,8 @@ import Col from 'react-bootstrap/Col'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, 'application']} />
-    {/* <Container> */}
-    <StyledContainer>
+    <Container>
+      {/* <StyledContainer> */}
       <Row>
         <Col md={4}>
           <h1><FaBeer />{' '} Hello from gatsby</h1>
@@ -29,14 +29,14 @@ const IndexPage = () => (
 
         </Col>
       </Row>
-    </StyledContainer>
-    {/* </Container> */}
+      {/* </StyledContainer> */}
+    </Container>
   </Layout>
 )
 
 const StyledContainer = styled.div`
-  /* width: 1200px;
-  /* height: 100vh; */
+  width: 1200px;
+  height: 100vh; 
   margin: auto;
   max-width: 100%;
 
