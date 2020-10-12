@@ -1,22 +1,57 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
+import styled from 'styled-components'
+import { FaBeer } from 'react-icons/fa'
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
+
+// import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <SEO title="Home" keywords={[`gatsby`, 'application']} />
+    {/* <Container> */}
+    <StyledContainer>
+      <Row>
+        <Col md={4}>
+          <h1><FaBeer />{' '} Hello from gatsby</h1>
+
+        </Col>
+        <Col md={4}>
+          <h1><FaBeer />{' '} Hello from gatsby</h1>
+
+        </Col>
+        <Col md={4}>
+          <h1><FaBeer />{' '} Hello from gatsby</h1>
+
+        </Col>
+      </Row>
+    </StyledContainer>
+    {/* </Container> */}
   </Layout>
 )
+
+const StyledContainer = styled.div`
+  width: 1200px;
+  height: 100vh;
+  margin: auto;
+  max-width: 100%;
+
+  background-color: black;
+
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+
+`
 
 export default IndexPage
