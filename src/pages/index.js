@@ -3,8 +3,8 @@ import React from "react"
 import styled from 'styled-components'
 import { FaBeer } from 'react-icons/fa'
 
-import Layout from "components/layout"
-import SEO from "components/seo"
+import Layout from "components/layout/layout"
+import SEO from "components/seo/seo"
 
 // import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -35,12 +35,12 @@ const IndexPage = () => (
 )
 
 const StyledContainer = styled.div`
-  width: 1200px;
-  height: 100vh;
+  /* width: 1200px;
+  /* height: 100vh; */
   margin: auto;
   max-width: 100%;
 
-  background-color: black;
+  background-color: darkcyan;
 
 
   h1 {
@@ -48,7 +48,7 @@ const StyledContainer = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
+  } 
 
 `
 

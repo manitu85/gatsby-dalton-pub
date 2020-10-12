@@ -1,5 +1,5 @@
-import React from "react"
-import Header from "../header"
+import React from 'react'
+import Navbar from './navbar'
 
 import GlobalStyles from 'components/common/global.styled'
 import 'sass/layout.scss'
@@ -8,6 +8,7 @@ import 'sass/layout.scss'
 const Layout = ({ children }) => {
   return (
     <React.Fragment>
+      <Navbar />
       <GlobalStyles />
       {children}
     </React.Fragment>

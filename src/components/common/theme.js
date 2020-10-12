@@ -21,6 +21,7 @@ const transFunction = (
 ) => {
   return `transition:${property} ${time} ${type}`
 }
+
 const transObject = ({
   property = 'all',
   time = '0.5s',

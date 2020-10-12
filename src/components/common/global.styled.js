@@ -17,8 +17,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Open-sans', helvetica;
-    color: white;
-    background: var(--main-orange);
+    color: var(--main-black);
+    background: var(--main-white);
   }
 
 `
