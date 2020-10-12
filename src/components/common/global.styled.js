@@ -10,13 +10,15 @@ const GlobalStyles = createGlobalStyle`
   }
 
   :root {
-    --main: #f15025;
+    --main-white: #fff;
+    --main-black: #101010;
+    --main-orange: #f15025;
   }
 
   body {
     font-family: 'Open-sans', helvetica;
     color: white;
-    background: var(--main);
+    background: var(--main-orange);
   }
 
 `

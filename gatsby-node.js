@@ -5,3 +5,29 @@
  */
 
 // You can delete this file if you're not using it
+
+// const path = require('path');
+
+// exports.onCreateWebpackConfig = ({ stage, actions }) => {
+//   actions.setWebpackConfig({
+//     resolve: {
+//       modules: [path.resolve(__dirname, "src"), "node_modules"],
+//     },
+//   })
+// }
+
+
+// exports.onCreateWebpackConfig = ({ actions }) => {
+//   actions.setWebpackConfig({
+//     resolve: {
+//       alias: {
+//         "~components": path.resolve(__dirname, "src/components")
+//       }
+//     }
+//   });
+// };
+
+
+// [https://www.mrozilla.cz/blog/gatsby-eslint-vscode-import-alias/]
+
+

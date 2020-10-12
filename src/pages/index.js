@@ -3,9 +3,8 @@ import React from "react"
 import styled from 'styled-components'
 import { FaBeer } from 'react-icons/fa'
 
-import Layout from "../components/layout"
-// import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "components/layout"
+import SEO from "components/seo"
 
 // import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -24,7 +23,6 @@ const IndexPage = () => (
         </Col>
         <Col md={4}>
           <h1><FaBeer />{' '} Hello from gatsby</h1>
-
         </Col>
         <Col md={4}>
           <h1><FaBeer />{' '} Hello from gatsby</h1>
@@ -49,7 +47,7 @@ const StyledContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 100vh;
   }
 
 `
