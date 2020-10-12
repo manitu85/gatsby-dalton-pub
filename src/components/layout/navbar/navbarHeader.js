@@ -10,12 +10,12 @@ const NavbarHeader = ({ handleOnToggle }) => {
   return (
     <StyledHeaderWrapper>
       <Link to='/' >
-        <Logo />
+        <StyledLogo />
         <span>Dalton Pub</span>
       </Link>
-      <IconWrapper>
+      <StyledIconWrapper>
         <CgMenuGridO onClick={e => handleOnToggle()} />
-      </IconWrapper>
+      </StyledIconWrapper>
     </StyledHeaderWrapper>
   )
 }
@@ -33,22 +33,10 @@ const StyledHeaderWrapper = styled.div`
     text-decoration: none;
     text-transform: uppercase;
     font-size: ${({ theme }) => theme.fontSizes.large}
-    
   }
-
-  /* .toggle-icon {
-    font-size: 2rem;
-     color: ${({ theme }) => theme.colors.mainYellow};
-    cursor: pointer;
-
-    @media (min-width: ${({ theme }) => theme.breakpoints.tablet} ) {
-      display: none;
-    }
-
-  } */
 `
 
-const Logo = styled.img.attrs({
+const StyledLogo = styled.img.attrs({
   src: logo,
   alt: 'Dalton-pub'
 })`
@@ -58,7 +46,7 @@ const Logo = styled.img.attrs({
   height: 2rem;
 `;
 
-const IconWrapper = styled.div`
+const StyledIconWrapper = styled.div`
     font-size: 2rem;
     color: ${({ theme }) => theme.colors.mainYellow};
     cursor: pointer;
@@ -67,5 +55,4 @@ const IconWrapper = styled.div`
       display: none;
     }
 `
-
 

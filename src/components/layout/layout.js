@@ -3,7 +3,7 @@ import Navbar from './navbar'
 
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'components/common/global.styled'
-import { theme } from 'components/common/theme'
+import { theme } from 'components/common/theme/theme'
 import 'sass/layout.scss'
 
 

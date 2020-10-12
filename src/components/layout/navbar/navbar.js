@@ -10,17 +10,18 @@ const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
 
-  // const handleOnToggle = () => setIsOpen(!isOpen)
+  const handleOnToggle = () => setIsOpen(!isOpen)
 
   return (
-    <Container>
-      <StyledNavWrapper>
-        {/* <NavbarHeader handleNavbar={isOpen} /> */}
-        <NavbarHeader handleOnToggle={e => setIsOpen(!isOpen)} />
-        <NavbarLinks handleOnToggle={e => setIsOpen(!isOpen)} />
-        <NavbarIcons />
-      </StyledNavWrapper>
-    </Container>
+    <StyledFluid>
+      <Container>
+        <StyledNavWrapper>
+          <NavbarHeader handleOnToggle={handleOnToggle} />
+          <NavbarLinks handleNavbar={isOpen} />
+          <NavbarIcons />
+        </StyledNavWrapper>
+      </Container>
+    </StyledFluid>
   )
 }
 
@@ -33,6 +34,9 @@ const StyledNavWrapper = styled.nav`
     align-items: center;
   }
 
+`
+const StyledFluid = styled.div`
+    background-color: ${({ theme }) => theme.colors.primaryHover}
 `
 
 
