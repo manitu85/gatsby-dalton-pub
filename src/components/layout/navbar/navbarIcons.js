@@ -49,21 +49,25 @@ export default NavbarIcons
 const StyledIconsWrapper = styled.div`
 
   .icon {
-    margin-right: 2rem;
-    font-size: 1.25rem;
+    margin-right: 1rem;
+    font-size: 1.35rem;
     transition: ${({ theme }) => theme.transitions.smooth};
-    color: ${({ theme }) => theme.colors.mainWhite};
+     color: ${({ theme }) => theme.colors.mainGrey};
     cursor: pointer;
   }
 
-  .facebook-icon:hover {
+  /* .facebook-icon {
     color: #3b579d;
   }
-  .twitter-icon :hover{
+  .twitter-icon {
     color: #3ab7f0;
   }
-  .instagram-icon:hover {
+  .instagram-icon {
     color: #da5f53;
+  } */
+
+  .icon:hover {
+    color: ${({ theme }) => theme.colors.mainYellow};
   }
 
   display: none;
@@ -76,24 +80,3 @@ const StyledIconsWrapper = styled.div`
   
 `;
 
-
-
-
-/* a {
-  font-size: 1.35rem;
-  color: ${({ theme }) => theme.colors.mainWhite};
-  margin-right: 5px;
-}
-
-
-
-.facebook,
-.twitter,
-.instagram {
-  transition: ${({ theme }) => theme.transitions.smooth};
-  cursor: pointer;
-
- &:hover {
-  color: ${({ theme }) => theme.colors.mainYellow};
- }
-} */
