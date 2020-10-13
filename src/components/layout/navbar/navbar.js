@@ -36,7 +36,9 @@ const StyledNavWrapper = styled.nav`
 
 `
 const StyledFluid = styled.div`
-    background-color: ${({ theme }) => theme.colors.primaryHover}
+    background-color: ${({ theme }) => theme.colors.primaryDark};
+    position: fixed;
+    width: 100%;
 `
 
 

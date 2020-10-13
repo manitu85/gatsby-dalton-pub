@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { styles } from '../utils'
-export const Banner = ({ title, subtitle, children }) => {
+
+
+export const Banner = ({ title, fontSize, subtitle, children }) => {
   return (
     <BannerWrapper>
-      <h1>{title}</h1>
-      <h3>{subtitle}</h3>
+      <BannerTitle fontSize={fontSize}>{title}</BannerTitle>
+      <BannerSubtitle>{subtitle}</BannerSubtitle>
       {children}
     </BannerWrapper>
   )
@@ -14,20 +15,24 @@ export const Banner = ({ title, subtitle, children }) => {
 const BannerWrapper = styled.div`
   margin-bottom: 3rem;
   text-align: center;
-  h1 {
-    color: ${styles.colors.mainWhite};
-    font-size: 3rem;
-    text-transform: uppercase;
-    ${styles.letterSpacing({ spacing: '0.75rem' })};
-  }
-  h3 {
-    color: ${styles.colors.mainWhite};
-    ${styles.textSlanted};
-    ${styles.letterSpacing({ spacing: '0.15rem' })};
-    font-size: 1.5rem;
-    text-transform: capitalize;
-  }
 `
+
+const BannerTitle = styled.h1`
+  color: ${({ theme }) => theme.colors.mainYellow};
+  font-size: ${props => props.fontSize};
+  text-transform: uppercase;
+  letter-spacing: .75rem;
+`
+
+const BannerSubtitle = styled.h3`
+  color: ${({ theme }) => theme.colors.mainWhite};
+  font-weight: 300;
+  font-style: oblique;
+  letter-spacing: .15rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+`
+
 Banner.defaultProps = {
   title: 'default title',
 }

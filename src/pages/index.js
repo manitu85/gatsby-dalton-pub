@@ -1,55 +1,74 @@
-import React from "react"
-// import { Link } from "gatsby"
-import styled from 'styled-components'
-import { FaBeer } from 'react-icons/fa'
+import React from 'react'
 
-import Layout from "components/layout/layout"
-import SEO from "components/seo/seo"
+import Layout from 'components/layout/layout'
+import SEO from 'components/seo/seo'
+
+import { HomeJumbotron } from 'components/common/jumbotron.styled'
+import { Banner } from '../components/common/banner.styled'
+import homeImg from 'images/pub.jpg'
 
 import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+// import Row from 'react-bootstrap/Row'
+// import Col from 'react-bootstrap/Col'
 
 
-const IndexPage = () => (
+const Home = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, 'application']} />
+    <SEO title='Home' keywords={[`gatsby`, 'application']} />
+    <HomeJumbotron img={homeImg} >
+      <Banner
+        title='DALTON PUB'
+        fontSize='3.5rem'
+        subtitle='The best pub in downtown of Belgrade'
+      />
+    </HomeJumbotron>
     <Container>
-      {/* <StyledContainer> */}
-      <Row>
-        <Col md={4}>
-          <h1><FaBeer />{' '} Hello from gatsby</h1>
-
-        </Col>
-        <Col md={4}>
-          <h1><FaBeer />{' '} Hello from gatsby</h1>
-        </Col>
-        <Col md={4}>
-          <h1><FaBeer />{' '} Hello from gatsby</h1>
-
-        </Col>
-      </Row>
-      {/* </StyledContainer> */}
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
+      OTHER SECTION
     </Container>
   </Layout>
 )
 
-const StyledContainer = styled.div`
-  width: 1200px;
-  height: 100vh; 
-  margin: auto;
-  max-width: 100%;
-
-  background-color: darkcyan;
 
 
-  h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  } 
-
-`
-
-export default IndexPage
+export default Home
