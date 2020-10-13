@@ -44,7 +44,7 @@ const Footer = () => {
       <IconsWrapper>
         {socialIcons}
       </IconsWrapper>
-      <Copyright>copyright &copy;{new Date().getFullYear()}</Copyright>
+      <Copyright>copyright &copy; {new Date().getFullYear()}</Copyright>
     </FooterWrapper>
   )
 }
@@ -61,18 +61,19 @@ const FooterTitle = styled.h3`
   color: ${({ theme }) => theme.colors.mainYellow}; 
   text-align: center;
   text-transform: uppercase;
-  padding: 0.3rem 1rem;
+  padding: .3rem 1rem;
   margin: 0 auto .5rem auto;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border: ${({ theme }) => theme.colors.mainYellow}; 
+  font-family: var(--font-display);
 `
 
 const StyledLogo = styled.img.attrs({
   src: logo,
   alt: 'Dalton-pub'
 })`
-  width: 6rem;
-  height: 4rem;
+  width: 5rem;
+  height: 3rem;
 `;
 
 const IconsWrapper = styled.div`
@@ -83,7 +84,7 @@ const IconsWrapper = styled.div`
 
   .icon {
     color: ${({ theme }) => theme.colors.mainWhite}; 
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     transition: ${({ theme }) => theme.transitions.smooth}; 
     &:hover {
       color: ${({ theme }) => theme.colors.mainYellow}; 
