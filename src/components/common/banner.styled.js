@@ -27,10 +27,10 @@ const BannerTitle = styled.h1`
 const BannerSubtitle = styled.h3`
   color: ${({ theme }) => theme.colors.mainWhite};
   font-weight: 300;
-  font-style: oblique;
   letter-spacing: .15rem;
   font-size: 1.5rem;
   text-transform: capitalize;
+  font-family: var(--font-primary);
 `
 
 Banner.defaultProps = {

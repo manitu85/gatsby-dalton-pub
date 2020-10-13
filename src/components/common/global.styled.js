@@ -13,6 +13,9 @@ const GlobalStyles = createGlobalStyle`
     --main-white: #fff;
     --main-black: #101010;
     --main-orange: #f15025;
+
+    --font-primary: 'Kaushan Script', cursive;
+    --font-display: 'Lakki Reddy', cursive;
   }
 
   body {
