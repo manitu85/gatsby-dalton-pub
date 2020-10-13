@@ -15,13 +15,14 @@ const GlobalStyles = createGlobalStyle`
     --main-orange: #f15025;
 
     --font-primary: 'Kaushan Script', cursive;
+    --font-secondary:'Lobster Two', cursive;
     --font-display: 'Lakki Reddy', cursive;
   }
 
   body {
     font-family: 'Open-sans', helvetica;
     color: ${({ theme }) => theme.colors.primaryLight};
-    background: ${({ theme }) => theme.colors.mainBlack};
+    background: ${({ theme }) => theme.colors.primaryDark};
   }
 
 `

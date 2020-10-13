@@ -1,30 +1,39 @@
 import styled from 'styled-components'
-import { styles } from '../utils'
+
+
 const BannerButton = styled.button`
   display: block;
-  color: ${styles.colors.mainWhite};
+  color: ${({ theme }) => theme.colors.mainWhite};
   background: transparent;
-  padding: 0.5rem 1rem;
+  padding: .75rem 1.75rem;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: .8rem;
+  border-radius: 25px;
   letter-spacing: 0.5rem;
   font-weight: 700;
-  ${styles.border({ color: `${styles.colors.mainWhite}` })};
+  border: solid 1px ${({ theme }) => theme.colors.mainWhite};
   margin-top: 1rem;
-  ${styles.transition({})};
+  transition: ${({ theme }) => theme.transitions.smooth};
+
+  margin: ${props => props.margin};
+
+
   &:hover {
-    background: ${styles.colors.mainWhite};
-    color: ${styles.colors.mainBlack};
+    background: ${({ theme }) => theme.colors.mainYellow};
+    color: ${({ theme }) => theme.colors.mainBlack};
+
     cursor: pointer;
   }
 `
 
 const SectionButton = styled(BannerButton)`
-  color: ${styles.colors.mainBlack};
-  ${styles.border({ color: `${styles.colors.mainBlack}` })};
+  margin: ${props => props.margin};
+  color: ${({ theme }) => theme.colors.mainYellow};
+  border: solid 2px ${({ theme }) => theme.colors.mainYellow};
+  
   &:hover {
-    background: ${styles.colors.mainBlack};
-    color: ${styles.colors.mainYellow};
+    background:  ${({ theme }) => theme.colors.mainYellow};
+    color:  ${({ theme }) => theme.colors.mainWhite};
     cursor: pointer;
   }
 `

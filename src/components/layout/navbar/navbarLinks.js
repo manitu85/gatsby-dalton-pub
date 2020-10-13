@@ -48,22 +48,20 @@ export default NavbarLinks
 const StyledLinkWrapper = styled.ul`
   overflow: hidden;
   height: ${props => props.open ? '150px' : 0};
-   /* transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'}; */
-   /* background: red; */
 
-   transition: ${({ theme }) => theme.transitions.smooth};
+  transition: ${({ theme }) => theme.transitions.smooth};
 
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-      display: flex;
-      flex-direction: row;
-      height: auto;
-      margin: 0 auto;
-   }
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: 0 auto;
+  }
 
 `
 
@@ -76,25 +74,28 @@ const StyledLinkItem = styled.li`
     padding: .5rem 1rem .5rem 1.3rem;
     color: ${({ theme }) => theme.colors.mainGrey};
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-family: var(--font-primary);
+    letter-spacing: 1px;
+
     cursor: pointer;
 
     transition: ${({ theme }) => theme.transitions.smooth};
 
-     @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-       transform: translateX(0);
-       padding: .5rem 1rem .5rem 1rem;
-       font-size: .8rem;
-   }
+    @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+      transform: translateX(0);
+      padding: .5rem 1rem .5rem 1rem;
+      font-size: 1.2rem;
+  }
 
-    &:hover {
-      color: ${({ theme }) => theme.colors.mainYellow};
-      transform: translateX(5px);
-  
-     @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-       transform: translateX(0);
-      }
+  &:hover {
+    color: ${({ theme }) => theme.colors.mainYellow};
+    transform: translateX(5px);
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    transform: translateX(0);
     }
+  }
 
   }
 `

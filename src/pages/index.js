@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import Layout from 'components/layout/layout'
 import SEO from 'components/seo/seo'
@@ -8,6 +9,8 @@ import { Banner } from '../components/common/banner.styled'
 import homeImg from 'images/pub.jpg'
 
 import Container from 'react-bootstrap/Container'
+import { BannerButton } from '../components/common/button.styled'
+import Info from '../components/home/info'
 // import Row from 'react-bootstrap/Row'
 // import Col from 'react-bootstrap/Col'
 
@@ -17,54 +20,17 @@ const Home = () => (
     <SEO title='Home' keywords={[`gatsby`, 'application']} />
     <HomeJumbotron img={homeImg} >
       <Banner
-        title='DALTON PUB'
-        fontSize='3.5rem'
+        title='saloon dalton pub'
+        fontSize='3rem'
         subtitle='The best pub in downtown of Belgrade'
-      />
+      >
+        <Link to='/menu/' style={{ textDecoration: 'none' }}>
+          <BannerButton margin='2rem auto'>menu</BannerButton>
+        </Link>
+      </Banner>
     </HomeJumbotron>
     <Container>
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
-      OTHER SECTION
+      <Info />
     </Container>
   </Layout>
 )
