@@ -5,7 +5,7 @@ import Layout from 'components/layout/layout'
 import SEO from 'components/seo/seo'
 
 import Info from 'components/home/info'
-import Gallery from 'components/home/gallery'
+import Gallery from 'components/home/galleryAll.js'
 import homeImg from 'images/pub.jpg'
 
 import Container from 'react-bootstrap/Container'

@@ -42,10 +42,10 @@ const InfoWrapper = styled.div`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet} ) {
-    width: 70%;
+    width: 80%;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    width: 60%;
+    width: 70%;
   }
 `
