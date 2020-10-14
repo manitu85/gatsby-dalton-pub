@@ -92,7 +92,7 @@ const GalleryWrapperGrid = styled.div`
     .item-5 {
       grid-area: two
     }  
- 
+
   } 
 `
 
@@ -102,6 +102,7 @@ const Item = styled.div`
 
 const Info = styled.p`
   position: absolute;
+  z-index: 990;
   top: 0;
   left: 0;
   background-color: ${({ theme }) => theme.colors.mainYellow};
