@@ -16,6 +16,8 @@ const Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 4rem;
 `
 // Reusable extended styles default
 const DefaultHeader = styled(Header)`

@@ -4,16 +4,18 @@ import { Link } from 'gatsby'
 import Layout from 'components/layout/layout'
 import SEO from 'components/seo/seo'
 
-import { HomeJumbotron } from 'components/common/jumbotron.styled'
-import { Banner } from '../components/common/banner.styled'
+import Info from '../components/home/info'
+import Gallery from '../components/home/gallery'
 import homeImg from 'images/pub.jpg'
 
 import Container from 'react-bootstrap/Container'
+import { HomeJumbotron } from 'components/common/jumbotron.styled'
+import { Banner } from '../components/common/banner.styled'
 import { BannerButton } from '../components/common/button.styled'
-import Info from '../components/home/info'
+
+
 // import Row from 'react-bootstrap/Row'
 // import Col from 'react-bootstrap/Col'
-
 
 const Home = () => (
   <Layout>
@@ -31,6 +33,7 @@ const Home = () => (
     </HomeJumbotron>
     <Container>
       <Info />
+      <Gallery />
     </Container>
   </Layout>
 )

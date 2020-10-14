@@ -4,7 +4,7 @@ import SEO from 'components/seo/seo'
 
 import { PageJumbotron } from 'components/common/jumbotron.styled'
 import { Banner } from '../components/common/banner.styled'
-import menuImg from 'images/menu-1.jpg'
+import menuImg from 'images/menu/menu-1.jpg'
 
 
 
