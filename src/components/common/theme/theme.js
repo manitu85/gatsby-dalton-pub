@@ -12,7 +12,6 @@ export const theme = {
     primaryLight: '#EFFFFA',
     primaryHover: '#28114a',
   },
-  fonts: ["Roboto", "sans-serif"],
   fontSizes: {
     small: ".8rem",
     medium: "1rem",

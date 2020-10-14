@@ -8,7 +8,7 @@ import styled from 'styled-components'
 
 const GET_IMAGES = graphql`
   {
-    getImages: allFile(filter: {relativeDirectory: { eq:"menu" }}) {
+    getImages: allFile(filter: {relativeDirectory: { eq: "menu" }}) {
       edges {
         node {
           childImageSharp {

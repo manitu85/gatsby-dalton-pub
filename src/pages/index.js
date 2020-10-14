@@ -6,23 +6,21 @@ import SEO from 'components/seo/seo'
 
 import Story from 'components/home/story'
 import Gallery from 'components/home/galleryAll'
+import MenuItems from 'components/home/menu'
 import homeImg from 'images/pub.jpg'
 
-import Container from 'react-bootstrap/Container'
 import { HomeJumbotron } from 'components/common/jumbotron.styled'
-import { Banner } from '../components/common/banner.styled'
-import { BannerButton } from '../components/common/button.styled'
+import { Banner } from 'components/common/banner.styled'
+import { BannerButton } from 'components/common/button.styled'
+import { Container } from 'components/common/container.styled'
 
-
-// import Row from 'react-bootstrap/Row'
-// import Col from 'react-bootstrap/Col'
 
 const Home = () => (
   <Layout>
-    <SEO title='Home' keywords={[`gatsby`, 'application']} />
+    <SEO title='Home' keywords={[`dalton`, `pub`, `cafee`]} />
     <HomeJumbotron img={homeImg} >
       <Banner
-        title='saloon dalton pub'
+        title='dalton saloon pub'
         fontSize='3rem'
         subtitle='The best pub in downtown of Belgrade'
       >
@@ -34,6 +32,7 @@ const Home = () => (
     <Container>
       <Story />
       <Gallery />
+      <MenuItems />
     </Container>
   </Layout>
 )
