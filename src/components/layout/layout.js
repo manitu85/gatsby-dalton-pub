@@ -6,7 +6,7 @@ import Footer from './footer/footer'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'components/common/global.styled'
 import { theme } from 'components/common/theme/theme'
-import 'sass/layout.scss'
+import 'sass/fonts.scss'
 
 
 const Layout = ({ children }) => {

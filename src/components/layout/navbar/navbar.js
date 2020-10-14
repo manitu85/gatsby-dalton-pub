@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
+
 import NavbarHeader from './navbarHeader'
 import NavbarIcons from './navbarIcons'
 import NavbarLinks from './navbarLinks'
-import Container from 'react-bootstrap/Container'
+
+import styled from 'styled-components'
+import { Container } from 'components/common/container.styled'
 
 
 const Navbar = () => {

@@ -30,7 +30,6 @@ const Gallery = () => {
   return (
     <Section>
       <GalleryWrapperGrid>
-
         {
           images.map(({ node }, idx) => {
             return (
@@ -41,7 +40,6 @@ const Gallery = () => {
             )
           })
         }
-
       </GalleryWrapperGrid>
     </Section>
   )
@@ -53,11 +51,11 @@ export default Gallery
 const GalleryWrapperGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {

@@ -13,7 +13,7 @@ const PRODUCTS = graphql`
     items: allContentfulMenu {
       edges {
         node {
-          contentfulid
+          id
           name
           price
           ingredients
@@ -39,7 +39,7 @@ const MenuItems = () => {
       <ProductsList>
         {
           products.map(({ node }) => (
-            <Product key={node.contentfulid} product={node} />
+            <Product key={node.id} product={node} />
           ))
         }
       </ProductsList>

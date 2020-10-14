@@ -6,7 +6,7 @@ import SEO from 'components/seo/seo'
 
 import Story from 'components/home/story'
 import Gallery from 'components/home/galleryAll'
-import MenuItems from 'components/home/menu'
+import MenuItems from 'components/home/menuItems'
 import homeImg from 'images/pub.jpg'
 
 import { HomeJumbotron } from 'components/common/jumbotron.styled'
