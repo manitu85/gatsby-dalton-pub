@@ -10,7 +10,7 @@ import { SectionButton } from 'components/common/button.styled'
 const Story = () => {
   return (
     <Section>
-      <SectionTitle message="let us tell you" title="our mission" />
+      <SectionTitle message="let us tell you" title="our story" />
       <InfoWrapper>
         <p className="text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde

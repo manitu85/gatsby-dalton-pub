@@ -36,7 +36,7 @@ const Gallery = () => {
             return (
               <Item key={idx} className={`item-${idx + 1}`} >
                 <Img fluid={node.childImageSharp.fluid} />
-                <Info>Lorem ipsum</Info>
+                <Info>Dalton Pub</Info>
               </Item>
             )
           })
@@ -73,15 +73,15 @@ const GalleryWrapperGrid = styled.div`
     grid-template-areas: 
     'one one two two'
     'one one three three'
-    'five four four four'
+    'six four four four'
     'five four four four'
     ;
 
     .item-1 {
-      grid-area: five
+      grid-area: one;
     }
     .item-2 {
-      grid-area: one;
+      grid-area: two
     }
     .item-3 {
       grid-area: three
@@ -90,7 +90,10 @@ const GalleryWrapperGrid = styled.div`
       grid-area: four
     }
     .item-5 {
-      grid-area: two
+      grid-area: five
+    }  
+    .item-6 {
+      grid-area: six
     }  
 
   } 

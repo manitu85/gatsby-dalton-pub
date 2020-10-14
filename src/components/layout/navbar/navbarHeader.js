@@ -23,7 +23,7 @@ const NavbarHeader = ({ handleOnToggle }) => {
 export default NavbarHeader
 
 const StyledHeaderWrapper = styled.div`
-  padding: .8rem 0;
+  padding-top: .3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,7 +34,13 @@ const StyledHeaderWrapper = styled.div`
     text-decoration: none;
     text-transform: uppercase;
     font-size: ${({ theme }) => theme.fontSizes.large};
-  font-family: var(--font-display);
+    font-family: var(--font-display);
+
+  span {
+    display: block;
+    color: ${({ theme }) => theme.colors.mainYellow};
+
+  }
 
   }
 `
@@ -43,8 +49,8 @@ const StyledLogo = styled.img.attrs({
   src: logo,
   alt: 'Dalton-pub'
 })`
-  margin-right: 10px;
 
+  margin-left: 5px;
   width: 6rem;
   height: 4rem;
 `;

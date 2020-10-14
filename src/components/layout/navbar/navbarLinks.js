@@ -85,7 +85,7 @@ const StyledLinkItem = styled.li`
     @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
       transform: translateX(0);
       padding: .5rem 1rem .5rem 1rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
   }
 
   &:hover {
