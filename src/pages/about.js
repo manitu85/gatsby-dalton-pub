@@ -8,7 +8,7 @@ import { PageJumbotron } from 'components/common/jumbotron.styled'
 import { Banner } from 'components/common/banner.styled'
 import { Container } from 'components/common/container.styled'
 import { Section } from 'components/common/section.styled'
-import { Title } from 'components/common/title.styled'
+import { SectionTitle } from 'components/common/title.styled'
 
 
 import aboutImg from 'images/about.jpg'
@@ -28,7 +28,7 @@ const About = () => {
       </PageJumbotron>
       <Container>
         <Section>
-          <Title title='our gallery' message='let see us' />
+          <SectionTitle title='our gallery' message='let see us' />
           <Gallery />
         </Section>
       </Container>

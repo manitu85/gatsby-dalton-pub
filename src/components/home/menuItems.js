@@ -6,7 +6,7 @@ import Product from './product'
 
 import { Section } from 'components/common/section.styled'
 import { SectionTitle } from 'components/common/title.styled'
-import { SectionButton } from 'components/common/button.styled'
+// import { SectionButton } from 'components/common/button.styled'
 
 const PRODUCTS = graphql`
   {
