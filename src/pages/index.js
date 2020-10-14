@@ -4,8 +4,8 @@ import { Link } from 'gatsby'
 import Layout from 'components/layout/layout'
 import SEO from 'components/seo/seo'
 
-import Info from 'components/home/info'
-import Gallery from 'components/home/galleryAll.js'
+// import Info from 'components/home/info'
+import Gallery from 'components/home/galleryAll'
 import homeImg from 'images/pub.jpg'
 
 import Container from 'react-bootstrap/Container'
@@ -32,7 +32,7 @@ const Home = () => (
       </Banner>
     </HomeJumbotron>
     <Container>
-      <Info />
+      {/* <Info /> */}
       <Gallery />
     </Container>
   </Layout>
