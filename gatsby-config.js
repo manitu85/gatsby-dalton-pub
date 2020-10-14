@@ -1,5 +1,9 @@
 const path = require('path');
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Saloon Dalton Pub`,
@@ -18,6 +22,13 @@ module.exports = {
         fonts: path.join(__dirname, "src/assets/fonts"),
         sass: path.join(__dirname, "src/sass"),
       }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,

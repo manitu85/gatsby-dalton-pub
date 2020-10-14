@@ -5,7 +5,7 @@ import logo from 'images/dalton-logo.png'
 import { CgMenuGridO } from 'react-icons/cg'
 
 const NavbarHeader = ({ handleOnToggle }) => {
-  console.log('handleOnToggle', handleOnToggle)
+  // console.log('handleOnToggle', handleOnToggle)
 
   return (
     <StyledHeaderWrapper>
