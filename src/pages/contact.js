@@ -4,7 +4,7 @@ import SEO from 'components/seo/seo'
 
 import { PageJumbotron } from 'components/common/jumbotron.styled'
 import { Banner } from '../components/common/banner.styled'
-import contactImg from 'images/contact-1.jpg'
+import contactImg from 'images/hero/contact.jpg'
 
 
 const Contact = () => {

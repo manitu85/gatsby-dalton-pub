@@ -9,11 +9,13 @@ const Product = ({ product }) => {
 
   return (
     <ProductWrapper>
-      <Img fixed={fixed} className="img" />
+      <Img fixed={fixed}
+        className="img" />
       <div className="text">
         <ProductContent>
           <ProductName>{name}</ProductName>
-          <ProductPrice>{price} € </ProductPrice>
+          <ProductPrice>{price}€
+          </ProductPrice>
         </ProductContent>
         <ProductInfo>{ingredients}</ProductInfo>
       </div>

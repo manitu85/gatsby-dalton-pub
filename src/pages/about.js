@@ -10,30 +10,27 @@ import { Container } from 'components/common/container.styled'
 import { Section } from 'components/common/section.styled'
 import { SectionTitle } from 'components/common/title.styled'
 
-
-import aboutImg from 'images/about.jpg'
-
+import aboutImg from 'images/hero/about.jpg'
 
 
-const About = () => {
-  return (
-    <Layout>
-      <SEO title='About' keywords={[`gatsby`, 'application']} />
-      <PageJumbotron img={aboutImg} >
-        <Banner
-          title='ABOUT US'
-          fontSize='2.5rem'
-          subtitle='we serve best cocktails and fun in city'
-        />
-      </PageJumbotron>
-      <Container>
-        <Section>
-          <SectionTitle title='our gallery' message='let see us' />
-          <Gallery />
-        </Section>
-      </Container>
-    </Layout>
-  )
-}
+const About = () => (
+  <Layout>
+    <SEO title='About' keywords={[`gatsby`, 'application']} />
+    <PageJumbotron img={aboutImg}>
+      <Banner
+        title='ABOUT US'
+        subtitle='we serve best cocktails and fun in city'
+        fontSize='2.5rem'
+      />
+    </PageJumbotron>
+    <Container>
+      <Section>
+        <SectionTitle title='our gallery' message='let see us' />
+        <Gallery />
+      </Section>
+    </Container>
+  </Layout>
+)
+
 
 export default About

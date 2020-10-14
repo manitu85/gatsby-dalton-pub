@@ -1,15 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import logo from 'images/dalton-logo.png'
+import logo from 'images/logo/dalton-logo.png'
 import { CgMenuGridO } from 'react-icons/cg'
 
+// import { useStaticQuery, graphql } from 'gatsby'
+// import Img from 'gatsby-image'
+
+
 const NavbarHeader = ({ handleOnToggle }) => {
-  // console.log('handleOnToggle', handleOnToggle)
 
   return (
     <StyledHeaderWrapper>
-      <Link to='/' >
+      <Link to='/'>
         <StyledLogo />
         <span>Saloon Pub</span>
       </Link>
@@ -23,11 +26,10 @@ const NavbarHeader = ({ handleOnToggle }) => {
 export default NavbarHeader
 
 const StyledHeaderWrapper = styled.div`
-  padding-top: .3rem;
+  padding-top: 0.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 
   a {
     color: ${({ theme }) => theme.colors.primaryLight};
@@ -36,32 +38,40 @@ const StyledHeaderWrapper = styled.div`
     font-size: ${({ theme }) => theme.fontSizes.large};
     font-family: var(--font-display);
 
-  span {
-    display: block;
-    color: ${({ theme }) => theme.colors.mainYellow};
-
-  }
-
+    span {
+      display: block;
+      color: ${({ theme }) => theme.colors.mainYellow};
+    }
   }
 `
 
 const StyledLogo = styled.img.attrs({
   src: logo,
-  alt: 'Dalton-pub'
+  alt: 'Dalton-pub',
 })`
-
   margin-left: 5px;
   width: 6rem;
   height: 4rem;
-`;
-
-const StyledIconWrapper = styled.div`
-    font-size: 2rem;
-    color: ${({ theme }) => theme.colors.mainYellow};
-    cursor: pointer;
-
-    @media (min-width: ${({ theme }) => theme.breakpoints.tablet} ) {
-      display: none;
-    }
 `
 
+const StyledIconWrapper = styled.div`
+  font-size: 2rem;
+  color: ${({ theme }) => theme.colors.mainYellow};
+  cursor: pointer;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    display: none;
+  }
+`
+
+// const SITE_LOGO = graphql`
+//   {
+//     logo: file(relativePath: {eq: "logo/logo.jpg"}) {
+//       childImageSharp {
+//         fluid(jpegQuality: 75, ) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `

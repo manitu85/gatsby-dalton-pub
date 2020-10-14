@@ -6,7 +6,7 @@ import Product from './product'
 
 import { Section } from 'components/common/section.styled'
 import { SectionTitle } from 'components/common/title.styled'
-// import { SectionButton } from 'components/common/button.styled'
+
 
 const PRODUCTS = graphql`
   {
@@ -36,13 +36,14 @@ const MenuItems = () => {
   return (
     <Section>
       <SectionTitle title='our menu' message='little taste of' />
-      <ProductsList>
-        {
-          products.map(({ node }) => (
-            <Product key={node.id} product={node} />
-          ))
-        }
-      </ProductsList>
+      <ProductsList> {
+        products.map(({ node }) => (
+          <Product
+            key={node.id}
+            product={node}
+          />
+        ))
+      } </ProductsList>
     </Section>
   )
 }
@@ -58,5 +59,4 @@ const ProductsList = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: repeat(2, 1fr);
   }
-  
 `;

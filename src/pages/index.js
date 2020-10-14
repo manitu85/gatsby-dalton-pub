@@ -7,7 +7,8 @@ import SEO from 'components/seo/seo'
 import Story from 'components/home/story'
 import Gallery from 'components/home/galleryAll'
 import MenuItems from 'components/home/menuItems'
-import homeImg from 'images/pub.jpg'
+import GetInTouch from '../components/home/getInTouch'
+import homeImg from 'images/hero/home.jpg'
 
 import { HomeJumbotron } from 'components/common/jumbotron.styled'
 import { Banner } from 'components/common/banner.styled'
@@ -24,7 +25,7 @@ const Home = () => (
         fontSize='3rem'
         subtitle='The best pub in downtown of Belgrade'
       >
-        <Link to='/menu/' style={{ textDecoration: 'none' }}>
+        <Link to='/menu' style={{ textDecoration: 'none' }}>
           <BannerButton margin='2rem auto'>menu</BannerButton>
         </Link>
       </Banner>
@@ -33,9 +34,13 @@ const Home = () => (
       <Story />
       <Gallery />
       <MenuItems />
+      <GetInTouch />
     </Container>
   </Layout>
 )
+
+
+
 
 
 export default Home
