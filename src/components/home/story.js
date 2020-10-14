@@ -3,15 +3,14 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import { Section } from 'components/common/section.styled'
-// import { SectionTitle } from 'components/common/title.styled'
-// import { SectionButton } from 'components/common/button.styled'
+import { SectionTitle } from 'components/common/title.styled'
+import { SectionButton } from 'components/common/button.styled'
 
 
-const Info = () => {
+const Story = () => {
   return (
     <Section>
-      <h1>INFO</h1>
-      {/* <SectionTitle message="let us tell you" title="our mission" />
+      <SectionTitle message="let us tell you" title="our mission" />
       <InfoWrapper>
         <p className="text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
@@ -23,12 +22,12 @@ const Info = () => {
         <Link to="/about/" style={{ textDecoration: 'none' }}>
           <SectionButton margin='2rem auto'>about</SectionButton>
         </Link>
-      </InfoWrapper> */}
+      </InfoWrapper>
     </Section>
   )
 }
 
-export default Info
+export default Story
 
 
 const InfoWrapper = styled.div`
