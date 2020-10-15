@@ -12,7 +12,7 @@ const GET_IMAGES = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 500, jpegQuality: 100) {
+            fluid(maxWidth: 500, jpegQuality: 80) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
@@ -69,8 +69,8 @@ const GalleryWrapperGrid = styled.div`
     }
     
     grid-template-areas: 
-    'one one two two'
-    'one one three three'
+    'two two one one'
+    'two two three three'
     'six four four four'
     'five four four four'
     ;

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import React from 'react'
-import img from 'images/about.jpg'
+import img from 'images/hero/about.jpg'
 
 const HomeJumbotron = ({ img, children }) => <Header img={img}>{children}</Header>
 
@@ -8,7 +8,8 @@ const PageJumbotron = ({ img, children }) => <DefaultHeader img={img}>{children}
 
 // Header
 const Header = styled.header`
-  min-height: calc(100vh - 68px);
+  /* min-height: calc(100vh - 68px); */
+  min-height: 100vh;
   background: 
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(${props => props.img}) center/cover fixed no-repeat;

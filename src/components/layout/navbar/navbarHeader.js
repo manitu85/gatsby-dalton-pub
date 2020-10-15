@@ -14,7 +14,7 @@ const NavbarHeader = ({ handleOnToggle }) => {
     <StyledHeaderWrapper>
       <Link to='/'>
         <StyledLogo />
-        <span>Saloon Pub</span>
+        <p>Saloon Pub</p>
       </Link>
       <StyledIconWrapper>
         <CgMenuGridO onClick={e => handleOnToggle()} />
@@ -33,14 +33,16 @@ const StyledHeaderWrapper = styled.div`
 
   a {
     color: ${({ theme }) => theme.colors.primaryLight};
+    line-height: 1;
     text-decoration: none;
     text-transform: uppercase;
     font-size: ${({ theme }) => theme.fontSizes.large};
     font-family: var(--font-display);
 
-    span {
+    p {
       display: block;
       color: ${({ theme }) => theme.colors.mainYellow};
+
     }
   }
 `
