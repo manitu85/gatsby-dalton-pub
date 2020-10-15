@@ -1,4 +1,5 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Navbar from './navbar'
 import Footer from './footer/footer'
@@ -9,13 +10,16 @@ import { theme } from 'components/common/theme/theme'
 import 'sass/fonts.scss'
 
 
-
 const Layout = ({ children }) => {
+
+  const data = useStaticQuery(SITE_METADATA)
+  const { title } = data.site.siteMetadata
+
   return (
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-        <Navbar />
+        <Navbar title={title || `Title`} />
         {children}
         <Footer />
       </>
@@ -24,13 +28,14 @@ const Layout = ({ children }) => {
 }
 
 
-export default Layout
+export const SITE_METADATA = graphql`
+  {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
 
-// const data = useStaticQuery(graphql`
-//     query SiteTitleQuery {
-//       site {
-//         siteMetadata {
-//           title
-//         }
-//       }
-//     }
+export default Layout

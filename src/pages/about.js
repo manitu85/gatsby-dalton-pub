@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from 'components/layout/layout'
 import SEO from 'components/seo/seo'
 
-import Gallery from 'components/home/galleryAll'
+import Gallery from 'components/home/gallery'
 
 import { PageJumbotron } from 'components/common/hero.styled'
 import { Banner } from 'components/common/banner.styled'

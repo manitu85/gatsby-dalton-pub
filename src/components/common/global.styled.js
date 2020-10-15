@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Open-sans', helvetica;
     color: ${({ theme }) => theme.colors.primaryLight};
-    background: ${({ theme }) => theme.colors.primaryDark};
+    background: ${({ theme }) => theme.colors.mainBlack};
   }
 
 `

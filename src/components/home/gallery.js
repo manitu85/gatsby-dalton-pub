@@ -29,6 +29,7 @@ const Gallery = () => {
   )
 }
 
+
 export const GET_IMAGES = graphql`
   {
     getImages: allFile(filter: {relativeDirectory: { eq: "menu" }}) {

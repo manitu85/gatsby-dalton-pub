@@ -5,9 +5,9 @@ import Layout from 'components/layout/layout'
 import SEO from 'components/seo/seo'
 
 import Story from 'components/home/story'
-import Gallery from 'components/home/galleryAll'
+import Gallery from 'components/home/gallery'
 import MenuItems from 'components/home/menuItems'
-import GetInTouch from '../components/home/getInTouch'
+import GetInTouch from 'components/home/getInTouch'
 import homeImg from 'images/hero/home.jpg'
 
 import { HomeJumbotron } from 'components/common/hero.styled'
@@ -38,9 +38,6 @@ const Home = () => (
     </Container>
   </Layout>
 )
-
-
-
 
 
 export default Home

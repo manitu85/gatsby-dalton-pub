@@ -2,7 +2,7 @@
 export const theme = {
   colors: {
     mainWhite: '#fff',
-    mainBlack: '#202020',
+    mainBlack: '#0f0f0f',
     mainOrange: '#f15025',
     mainYellow: '#d2aa5c',
     mainYellowDark: '#F2AF29',
@@ -11,7 +11,9 @@ export const theme = {
     primaryDark: '#0C0C0D',
     primaryLight: '#EFFFFA',
     primaryHover: '#28114a',
+    bgSecondary: '#040f20'
   },
+
   fontSizes: {
     small: ".8rem",
     medium: "1rem",

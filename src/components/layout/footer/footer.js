@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaFacebookMessenger, FaInstagram, FaTwitter } from 'react-icons/fa'
 import styled from 'styled-components'
-// import { Container } from 'components/common/container.styled'
+import { Container } from 'components/common/container.styled'
 import logo from 'images/logo/dalton-logo.png'
 
 
@@ -39,23 +39,26 @@ const Footer = () => {
   ))
 
   return (
-    <FooterWrapper>
-      <StyledLogo />
-      <FooterTitle>Saloon Pub</FooterTitle>
-      {/* <IconsWrapper>
-        {socialIcons}
-      </IconsWrapper> */}
-      <Copyright>copyright &copy; {new Date().getFullYear()}</Copyright>
-    </FooterWrapper>
+    <Container>
+      <FooterWrapper>
+        <StyledLogo />
+        <FooterTitle>Saloon Pub</FooterTitle>
+        {/* <IconsWrapper>
+          {socialIcons}
+        </IconsWrapper> */}
+        <Copyright>copyright &copy; {new Date().getFullYear()}</Copyright>
+      </FooterWrapper>
+    </Container>
   )
 }
 
 export default Footer
 
 const FooterWrapper = styled.footer`
-  padding: 2rem 0;
+  padding: 1rem 0;
   background-color: ${({ theme }) => theme.colors.primaryDark}; 
   text-align: center;
+  background-color: ${({ theme }) => theme.colors.primaryDark};
 `
 
 const FooterTitle = styled.h3`
@@ -65,8 +68,9 @@ const FooterTitle = styled.h3`
   padding: .3rem 1rem;
   margin: 0 auto .5rem auto;
   font-size: 2rem;
-  border: ${({ theme }) => theme.colors.mainYellow}; 
   font-family: var(--font-display);
+  line-height: .9;
+  font-size: 1.25rem;
 `
 
 const StyledLogo = styled.img.attrs({
@@ -97,5 +101,5 @@ const Copyright = styled.p`
   color: ${({ theme }) => theme.colors.mainWhite}; 
   text-transform: capitalize;
   text-align: center;
-  margin: 1rem 0;
+  margin-top: -1rem;
 `

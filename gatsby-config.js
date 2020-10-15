@@ -18,6 +18,7 @@ module.exports = {
         src: path.join(__dirname, "src"),
         pages: path.join(__dirname, "src/pages"),
         components: path.join(__dirname, "src/components"),
+        common: path.join(__dirname, "src/components/common"),
         images: path.join(__dirname, "src/assets/images"),
         fonts: path.join(__dirname, "src/assets/fonts"),
         sass: path.join(__dirname, "src/sass"),
@@ -50,13 +51,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `dalton-saloon-pub`,
+        short_name: `dalton pub`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#0f0f0f`,
+        theme_color: `#0f0f0f`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/logo/favicon.jpg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
