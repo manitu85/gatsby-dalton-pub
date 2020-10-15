@@ -10,7 +10,7 @@ import MenuItems from 'components/home/menuItems'
 import GetInTouch from '../components/home/getInTouch'
 import homeImg from 'images/hero/home.jpg'
 
-import { HomeJumbotron } from 'components/common/jumbotron.styled'
+import { HomeJumbotron } from 'components/common/hero.styled'
 import { Banner } from 'components/common/banner.styled'
 import { BannerButton } from 'components/common/button.styled'
 import { Container } from 'components/common/container.styled'

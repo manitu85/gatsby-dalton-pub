@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from 'components/layout/layout'
 import SEO from 'components/seo/seo'
 
-import { PageJumbotron } from 'components/common/jumbotron.styled'
+import { PageJumbotron } from 'components/common/hero.styled'
 import { Banner } from '../components/common/banner.styled'
 import contactImg from 'images/hero/contact.jpg'
 
