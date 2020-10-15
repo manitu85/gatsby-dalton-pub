@@ -39,7 +39,7 @@ const GetInTouch = () => {
 
 export const CONTACT_IMAGE = graphql`
   {
-    file(relativePath: { eq: "contact/contact-3.png" }) { 
+    file(relativePath: { eq: "contact/contact-1.png" }) { 
       childImageSharp {
         fluid(jpegQuality: 100, maxWidth: 500) {
           ...GatsbyImageSharpFluid_tracedSVG

@@ -4,7 +4,7 @@ import SEO from 'components/seo/seo'
 
 import MenuItems from 'components/home/menuItems'
 
-import { PageJumbotron } from 'components/common/hero.styled'
+import { PageHero } from 'components/common/hero.styled'
 import { Banner } from '../components/common/banner.styled'
 import { Container } from 'components/common/container.styled'
 
@@ -15,13 +15,13 @@ const Menu = () => {
   return (
     <Layout>
       <SEO title='Menu' keywords={[`menu`, 'cocktails', 'brew', 'breakfast']} />
-      <PageJumbotron img={menuImg} >
+      <PageHero img={menuImg} >
         <Banner
           title='menu'
           fontSize='2.5rem'
           subtitle='The best coffee and breakfast menu'
         />
-      </PageJumbotron>
+      </PageHero>
       <Container>
         <MenuItems />
       </Container>

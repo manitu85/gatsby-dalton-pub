@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import React from 'react'
 import img from 'images/hero/about.jpg'
 
-const HomeJumbotron = ({ img, children }) => <Header img={img}>{children}</Header>
+const HomeHero = ({ img, children }) => <Header img={img}>{children}</Header>
 
-const PageJumbotron = ({ img, children }) => <DefaultHeader img={img}>{children}</DefaultHeader>
+const PageHero = ({ img, children }) => <DefaultHeader img={img}>{children}</DefaultHeader>
 
 // Header
 const Header = styled.header`
@@ -25,8 +25,8 @@ const DefaultHeader = styled(Header)`
   min-height: 60vh;
 `
 
-HomeJumbotron.defaultProps = { img }
+HomeHero.defaultProps = { img }
 
-PageJumbotron.defaultProps = { img }
+PageHero.defaultProps = { img }
 
-export { HomeJumbotron, PageJumbotron }
+export { HomeHero, PageHero }

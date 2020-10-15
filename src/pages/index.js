@@ -10,7 +10,7 @@ import MenuItems from 'components/home/menuItems'
 import GetInTouch from 'components/home/getInTouch'
 import homeImg from 'images/hero/home.jpg'
 
-import { HomeJumbotron } from 'components/common/hero.styled'
+import { HomeHero } from 'components/common/hero.styled'
 import { Banner } from 'components/common/banner.styled'
 import { BannerButton } from 'components/common/button.styled'
 import { Container } from 'components/common/container.styled'
@@ -19,7 +19,7 @@ import { Container } from 'components/common/container.styled'
 const Home = () => (
   <Layout>
     <SEO title='Home' keywords={[`dalton`, `pub`, `cafee`]} />
-    <HomeJumbotron img={homeImg} >
+    <HomeHero img={homeImg} >
       <Banner
         title='dalton saloon pub'
         fontSize='3rem'
@@ -29,7 +29,7 @@ const Home = () => (
           <BannerButton margin='2rem auto'>menu</BannerButton>
         </Link>
       </Banner>
-    </HomeJumbotron>
+    </HomeHero>
     <Container>
       <Story />
       <Gallery />
