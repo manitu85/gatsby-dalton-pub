@@ -9,12 +9,13 @@ import { theme } from 'components/common/theme/theme'
 import 'sass/fonts.scss'
 
 
+
 const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <>
-        <Navbar />
         <GlobalStyles />
+        <Navbar />
         {children}
         <Footer />
       </>
@@ -24,3 +25,12 @@ const Layout = ({ children }) => {
 
 
 export default Layout
+
+// const data = useStaticQuery(graphql`
+//     query SiteTitleQuery {
+//       site {
+//         siteMetadata {
+//           title
+//         }
+//       }
+//     }

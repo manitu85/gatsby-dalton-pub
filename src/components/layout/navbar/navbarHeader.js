@@ -7,7 +7,6 @@ import { CgMenuGridO } from 'react-icons/cg'
 // import { useStaticQuery, graphql } from 'gatsby'
 // import Img from 'gatsby-image'
 
-
 const NavbarHeader = ({ handleOnToggle }) => {
 
   return (
@@ -49,9 +48,10 @@ const StyledHeaderWrapper = styled.div`
 
 const StyledLogo = styled.img.attrs({
   src: logo,
-  alt: 'Dalton-pub',
+  alt: 'dalton-pub',
 })`
-  margin-left: 5px;
+
+  transform: translate(5px);
   width: 6rem;
   height: 4rem;
 `
